@@ -22,11 +22,11 @@ btnNo.addEventListener("mouseover", (e) => {
     let newTop = btnTop;
     let newLeft = btnLeft;
 
-    while(Math.abs(newTop - btnTop) < containerHeight / 3){
+    while(Math.abs(newTop - btnTop) < containerHeight / 20){
         newTop = getRandomNumber(0, containerHeight - btnHeight);
     }
 
-    while(Math.abs(newLeft - btnLeft) < containerWidth / 3){
+    while(Math.abs(newLeft - btnLeft) < containerWidth / 20){
         newLeft = getRandomNumber(0, containerWidth - btnWidth);
     }
 
