@@ -22,12 +22,12 @@ btnNo.addEventListener("mouseover", (e) => {
     let newTop = btnTop;
     let newLeft = btnLeft;
 
-    while(Math.abs(newTop - btnTop) < containerHeight / 20){
-        newTop = getRandomNumber(0, containerHeight - btnHeight);
+    while(Math.abs(newTop - btnTop) < containerHeight / 50){
+        newTop = getRandomNumber(100, containerHeight - btnHeight);
     }
 
-    while(Math.abs(newLeft - btnLeft) < containerWidth / 20){
-        newLeft = getRandomNumber(0, containerWidth - btnWidth);
+    while(Math.abs(newLeft - btnLeft) < containerWidth / 50){
+        newLeft = getRandomNumber(100, containerWidth - btnWidth);
     }
 
     btnNo.style.top = Math.floor(newTop) + "px";
